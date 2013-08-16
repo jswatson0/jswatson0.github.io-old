@@ -48,30 +48,30 @@ Time.zone = "America/Chicago"
 ## Blog settings
 ###
 
-set :disqus_shortname, "My Blog"
+# set :disqus_shortname, "My Blog"
 
-activate :blog do |blog|
-  blog.prefix = "/blog"
-  blog.permalink = ":year/:month/:day/:title.html"
-  blog.sources = ":year-:month-:day-:title.html"
-  blog.taglink = "tags/:tag.html"
-  blog.layout = "article"
-  blog.summary_separator = /(READMORE)/
-  blog.summary_length = 250
-  blog.year_link = ":year.html"
-  blog.month_link = ":year/:month.html"
-  blog.day_link = ":year/:month/:day.html"
-  blog.default_extension = ".md"
+# activate :blog do |blog|
+#   blog.prefix = "/blog"
+#   blog.permalink = ":year/:month/:day/:title.html"
+#   blog.sources = ":year-:month-:day-:title.html"
+#   blog.taglink = "tags/:tag.html"
+#   blog.layout = "article"
+#   blog.summary_separator = /(READMORE)/
+#   blog.summary_length = 250
+#   blog.year_link = ":year.html"
+#   blog.month_link = ":year/:month.html"
+#   blog.day_link = ":year/:month/:day.html"
+#   blog.default_extension = ".md"
 
-  blog.tag_template = "/blog/tag.html"
-  blog.calendar_template = "/blog/calendar.html"
+#   blog.tag_template = "/blog/tag.html"
+#   blog.calendar_template = "/blog/calendar.html"
 
-  blog.paginate = true
-  blog.per_page = 5
-  blog.page_link = "page/:num"
-end
+#   blog.paginate = true
+#   blog.per_page = 5
+#   blog.page_link = "page/:num"
+# end
 
-page "/blog/feed.xml", :layout => false
+# page "/blog/feed.xml", :layout => false
 
 ###
 # Deployment settings
@@ -121,7 +121,7 @@ page "humans.txt", :layout => false
 ###
 
 # Automatic image dimensions on image_tag helper
-activate :automatic_image_sizes
+# activate :automatic_image_sizes
 
 helpers do
   # Generate the markup for a responsive social network link.

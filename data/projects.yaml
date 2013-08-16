@@ -1,17 +1,16 @@
 - 
-  name: MakerSquare
-  url: http://themakersquare.com
-  screenshot: makersquare-screenshot.png
+  name: Bloggregator
+  url: http://a-bloggregator.herokuapp.com
+  screenshot: bloggregator.png
   featured: true
   description: |
-                 MakerSquare is a full-time, ten week program that turns you into a web developer.
+                 Bloggregator is a rails app to aggregate and display web artilcles, RSS feeds, and personal blog posts.  A user can register to add posts to a personal reading list. 
 - 
-  name: RailsGirls ATX
-  url: http://railsgirlsatx.org
-  source_link: http://github.com/railsgirlsatx/site
-  screenshot: railsgirls-screenshot.png
-  featured: false
+  name: Connect2Good
+  url: http://connect2good.herokuapp.com
+  #source_link: http://github.com/railsgirlsatx/site
+  screenshot: c2g.png
   description: |
-                 This is a very long description.
+                 I am happy to be part of the team that tackled this social good application for our client Connect2Good.  This application seeks to address the problem of community resources being under utilized or simply being wasted.  
 
                  It has multiple paragraphs.    

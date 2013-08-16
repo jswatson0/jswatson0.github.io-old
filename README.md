@@ -35,34 +35,50 @@ bundle exec middleman deploy
 
 After a few minutes, your site should be live.
 
-## Configuration
+## Set-up
+
+### Running a development server
+
+To check out your edits locally, simply run a middleman development server:
+
+```console
+bundle exec middleman
+```
+
+This will start a development server visible at [localhost:4567](http://localhost:4567).
+
+### Configuration
 
 Most of the site can be configured via altering values in the `config.rb` file.
 
-### Résumé
+#### Résumé
 
 Drop a PDF of your résumé in the source directory. Now set `resume` to the name of the file. A link will appear in the top navigation bar.
 
-### Social Networking Links
+#### Social Networking Links
 
 Under the "Social Network link settings" section of `config.rb`, reset the values to point at your social networking accounts, or set them to nil to leave them out of the navigation.
 
-### Projects
+#### Projects
 
 You can highlight your projects with the portfolio section of the site. Use the `data/projects.yaml` file as a template for listing a description of each of your projects. They will automatically 
 
-#### Taking Screenshots
+##### Taking Screenshots
 
 Use Safari to view a live version of your project. Press command-shift-4-space, then click on the Safari window to save a screenshot to the Desktop. Now open the screenshot in Preview, and resize the image to 50% of its original size. Now drop the image file into `source/images`.
 
 
-### Disqus integration (for blog)
+#### Disqus integration (for blog)
 
 Create a Disqus account for your blog, and set the `disqus_shortname` variable in `config.rb` to the shortname for your blog.
 
-### Google Analytics integration
+#### Google Analytics integration
 
 Create a Google Analytics account, and set the `google_analytics_tracking_id` appropriately.
+
+## Theming
+
+Choose a theme [from the wiki](https://github.com/makersquare/personal-site-template/wiki/Themes), then uncomment the line with that theme's name in `source/stylesheets/theme.css.scss`. If you would like to create your own theme, you can use `source/stylesheets/themes/template.css.scss` as a guide. Create a new file in `source/stylesheets/themes` with the name of your theme, then add a line to `source/stylesheets/theme.css.scss` to incorporate it. Be sure to send a pull request if it's awesome!
 
 ## Blogging
 
@@ -94,4 +110,22 @@ To deploy, just run the following again:
 bundle exec middleman build
 bundle exec middleman deploy
 ```
+
+## Keeping things up to date
+
+If you want to keep up to date with the latest changes to the [base template](http://github.com/makersquare/personal-site-template), start by making sure your repo's stage is clean, then run the following:
+
+```console
+git pull upstream master
+```
+
+## Using a custom domain name
+
+Create a file `source/CNAME` containing your domain name:
+
+```text
+thatwebmuck.com
+```
+
+Commit this file to your source branch, then build and deploy the site. Now follow [GitHub's instructions for adding a custom domain to your Pages site](https://help.github.com/articles/setting-up-a-custom-domain-with-pages). 
 

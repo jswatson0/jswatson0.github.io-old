@@ -21,7 +21,7 @@ activate :sprockets
 
 set :full_name, "Jason Watson"
 set :city, "Austin, Texas"
-set :resume, nil # Set to filename of resume PDF in source directory.
+set :resume, "jason_watson_resume.pdf"
 set :google_analytics_tracking_id, "UA-111111111-11"
 
 ###
@@ -36,7 +36,7 @@ set :google_plus_user_id, "100630656613487772328"
 set :facebook_profile_name, "jason.watson.9"
 set :twitter_username, "jswatson0"
 # This is your shortname for your profile URL: http://linkedin.com/in/adalovelace
-set :linkedin_profile_name, "jswatson0"
+set :linkedin_profile_name, "jswatson"
 set :dribbble_username, "adalovelace"
 set :github_username, "jswatson0"
 set :gravatar_email_address, "jswatson0@gmail.com"
@@ -48,7 +48,7 @@ Time.zone = "America/Chicago"
 ## Blog settings
 ###
 
-set :disqus_shortname, "adas-blog"
+set :disqus_shortname, "My Blog"
 
 activate :blog do |blog|
   blog.prefix = "/blog"

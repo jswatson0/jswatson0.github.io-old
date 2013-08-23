@@ -22,7 +22,7 @@ activate :sprockets
 set :full_name, "Jason Watson"
 set :city, "Austin, Texas"
 set :resume, "jason_watson_resume.pdf"
-set :google_analytics_tracking_id, "UA-111111111-11"
+set :google_analytics_tracking_id, "UA-43221854-1"
 
 ###
 ## Social network link settings

@@ -1,4 +1,10 @@
 // Use this as a scaffold for creating your own themes!
+@import "compass/css3";
+@import "web-fonts";
+
+// Google Fonts
+@include web-font((Raleway), (500));
+@include web-font((Varela Round), (400));
 
 // ----||--------------------------
 //     || VARIABLES
@@ -31,6 +37,7 @@
 }
 
 .featured-element-row {
+
 }
 
 section.latest-from-blog, section.featured-project {

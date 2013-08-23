@@ -16,6 +16,9 @@ $project-screenshot-left-margin: -22px;
   @include grid-row;
   @include panel($bio-background-color);
 }
+.index {
+  border-top-color: white;
+}
 
 .profile {
   img {
@@ -37,9 +40,21 @@ $project-screenshot-left-margin: -22px;
 .featured-element-row {
   @include grid-row;
   margin-bottom: 50px;
+  float: left;
+  width: 50%;
+
+}
+.description-element-row {
+  width: 50%;
+  float: right;
+
+
 }
 
-section.latest-from-blog, section.featured-project {
+section.featured-project {
+
+    
+
   h2 {
     font-size: $featured-content-header-font-size;
   }
@@ -48,10 +63,16 @@ section.latest-from-blog, section.featured-project {
     font-size: $featured-content-header-font-size - 0.4em;
   }
 }
-
+.project {
+  width:100%;
+}
 section.featured-project {
+
+
+
   img {
-    margin-left: $project-screenshot-left-margin;
+    // margin-left: $project-screenshot-left-margin;
+
   }
 }
 

@@ -17,3 +17,7 @@
 .rbenv-version
 .rbenv-gemsets
 
+/.idea/workspace.xml
+/.idea/tasks.xml
+.DS_Store
+
